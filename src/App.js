@@ -1,12 +1,16 @@
 import './App.css';
 import Login from './Session/login.js'
+import { AuthProvider } from './Session/AuthContext'
+
 
 function App() {
   return (
-    <div className="App">
-      fdas
-      <Login />
-    </div>
+    <AuthProvider>
+      <div className="App">
+        <p>dd</p>
+        <Login />
+      </div>
+    </AuthProvider>
   );
 }
 
