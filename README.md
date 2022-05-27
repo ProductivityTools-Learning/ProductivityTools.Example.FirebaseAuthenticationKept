@@ -15,7 +15,7 @@ Example shows how to create application which will use Google as an autenticator
 
 <!--more-->
 
-Example has no code which is not necessary. The main element is AuthContext which provides user to all components.
+Tokens returned from Google/Firebase are valid for 1hour, so the main responsibility of the Contxt is to refresh it. In this implmenentation code refreshes token every 10 minutes.
 
 ```javascript 
 import { createContext, useEffect, useContext,useState } from 'react';
@@ -59,3 +59,8 @@ export const useAuth = () => {
     return useContext(AuthContext);
   };
 ```
+
+Aplication has simple interface it allows to login/logout user. It displays user Id. 
+I encourage to change the refresh value and check how request for the token is performed.
+
+![](Images/2022-05-27-17-49-06.png)
