@@ -24,13 +24,14 @@ export function AuthProvider({children}) {
          })
     }, []);
 
-    // useEffect(() => {
-    //     const handle = setInterval(async () => {
-    //         const user = firebase.getAuth().currentUser;
-    //         if (user) await user.getIdToken(true);
-    //     }, 10 * 60 * 1000);
-    //     return () => clearInterval(handle);
-    // }, []);
+    useEffect(() => {
+        const handle = setInterval(async () => {
+            const user = auth.currentUser;
+            if (user) await user.getIdToken(true);
+            console.log("refresh token")
+        }, 10* 60 * 1000);
+        return () => clearInterval(handle);
+    }, []);
 
     return (
         //<AuthContext.Provider value={{ user }}>{children}</AuthContext.Provider>
