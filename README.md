@@ -1,6 +1,6 @@
-<!--Category:PowerShell--> 
+<!--Category:React,Firebase--> 
  <p align="right">
-    <a href="http://productivitytools.tech/convert-documents/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
+    <a href="http://productivitytools.tech/autentication-and-refresh-token-in-react-app/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
     <a href="https://github.com/ProductivityTools-Learning/ProductivityTools.Example.FirebaseAuthenticationKept"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
@@ -9,7 +9,7 @@
     </a>
 </p>
 
-# Autenticate and refresh token in react app
+# Autentication and refresh token in react app
 
 Example shows how to create application which will use Google as an autenticator service and firebase as an integration layer. Webpage also take care about refreshing tokens so user won't be logout.
 
@@ -63,4 +63,5 @@ export const useAuth = () => {
 Aplication has simple interface it allows to login/logout user. It displays user Id. 
 I encourage to change the refresh value and check how request for the token is performed.
 
+<!--og-image-->
 ![](Images/2022-05-27-17-49-06.png)
